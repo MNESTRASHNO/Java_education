@@ -14,3 +14,48 @@ mindmap
       TaskOne
       TaskTwo
       
+%%{init: {'theme':'forest'}}%%
+mindmap
+  root((Appsec<br/>Engineer))
+    Sec
+      OWASP 10
+      CWE/CVE
+      SCA
+      SAST
+      DAST
+      DevSecOps
+      Triage
+      Threats
+      Standards
+      Cryptography
+    Dev
+      Langs/Code
+      Lifecycle
+      Architecture
+      Patterns
+      Workflows
+      SQL
+    Ops
+      Pipeline
+      Containers
+      Runtime
+      Deploy
+      Operate
+      Monitoring
+    Tools
+      IDE
+      git
+      Postman
+      ZAP
+      Semgrep
+      Trivy
+      OWASP DC/DT
+      shell
+      docker
+      kubelet
+    Practice
+      CTF
+      Portwsigger<br/>Academy
+      JuiceShop
+      DVWA
+      API
