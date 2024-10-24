@@ -1,16 +1,23 @@
 # Java_education
+---
+title: practise
+markmap:
+  colorFreezeLevel: 2
+---
 
-%%{init: {'theme':'forest'}}%%
-mindmap
-  root((Study<br/>Mirea))
-    Task3
-      App
-      Book
-      Customer
-      Game
-      GameShop
-      Library
-      Reader
-      TaskOne
-      TaskTwo
-      
+## TaskThird
+
+- App
+- Book
+-  Customer
+- Game
+- GameShop
+- Library
+- Reader
+- TaskOne
+- TaskTwo
+
+## TaskFourth
+
+
+
