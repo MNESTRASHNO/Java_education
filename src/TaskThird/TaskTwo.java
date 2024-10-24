@@ -1,9 +1,9 @@
-package src.Task3;
+package src.TaskThird;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class Task_2 {
+public class TaskTwo {
     public static void main(String[] args) {
         GameShop shop = new GameShop();
 

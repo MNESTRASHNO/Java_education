@@ -1,6 +1,6 @@
-package src.Task3;
+package src.TaskThird;
 
-public class Task_1 {
+public class TaskOne {
     public static void main(String[] args) {
         Library library = new Library();
 
