@@ -1,7 +1,7 @@
 # Java_education
 
 %%{init: {'theme':'forest'}}%%
-map
+mindmap
   root((Study<br/>Mirea))
     Task3
       App
