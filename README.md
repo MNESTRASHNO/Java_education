@@ -1,9 +1,7 @@
 # Java_education
 ---
-title: practise
-markmap:
-  colorFreezeLevel: 2
----
+
+
 
 ## TaskThird
 
