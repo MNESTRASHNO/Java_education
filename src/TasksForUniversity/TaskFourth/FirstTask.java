@@ -1,4 +1,4 @@
-package src.TaskFourth;
+package src.TasksForUniversity.TaskFourth;
 
 
 import java.io.BufferedWriter;
@@ -7,9 +7,9 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
-public class FileTask {
+public class FirstTask {
     public static void main(String[] args) {
-        Path directoryPath = Paths.get("src/TaskFourth/test_directory");
+        Path directoryPath = Paths.get("src/TasksForUniversity/test_directory");
         Path filePath = directoryPath.resolve("ILoveBerserk.txt");
         try {
             if (!Files.exists(directoryPath)) {

@@ -1,4 +1,4 @@
-package src.TaskThird;
+package src.TasksForUniversity.TaskThird;
 
 public class Customer {
     private String name;

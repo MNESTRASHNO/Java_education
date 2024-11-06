@@ -1,4 +1,4 @@
-package src.TaskThird;
+package src.TasksForUniversity.TaskThird;
 
 import java.util.HashMap;
 import java.util.List;

@@ -1,4 +1,4 @@
-package src.TaskThird;
+package src.TasksForUniversity.TaskThird;
 
 import java.util.ArrayList;
 import java.util.List;
