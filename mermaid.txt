@@ -1,0 +1,16 @@
+mindmap
+  root((practise))
+    TaskThird
+      App
+      Book
+      Customer
+      Game
+      GameShop
+      Library
+      Reader
+      TaskOne
+      TaskTwo
+    TaskFourth
+      FileTask
+      test_directory
+        ILoveBerserk.txt
