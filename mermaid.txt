@@ -14,3 +14,10 @@ mindmap
       FileTask
       test_directory
         ILoveBerserk.txt
+    TaskFifth
+     FirstTask
+     SecondTask
+     TrafficLight
+    myLittleUbojestvo
+        DONT_READ_THIS
+
