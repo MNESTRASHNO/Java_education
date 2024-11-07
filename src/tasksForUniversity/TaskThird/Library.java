@@ -60,7 +60,7 @@ public class Library {
         }
     }
 
-    // Подсчёт общего количества книг у всех читателей
+    // кол-во  всех читателей
     public void printBorrowedBooksCount() {
         int totalBorrowedBooks = 0;
         for (Reader reader : readers.values()) {
