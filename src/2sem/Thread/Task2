@@ -1,0 +1,56 @@
+import java.util.concurrent.CopyOnWriteArrayList;
+
+public class Task2 {
+    public static void main(String[] args) {
+        CopyOnWriteArrayList<Integer> listOfNumbers = new CopyOnWriteArrayList<>();
+
+        Thread writerThread = new Thread(new Writer(listOfNumbers));
+        Thread readerThread = new Thread(new Reader(listOfNumbers));
+
+        writerThread.start();
+        readerThread.start();
+    }
+}
+
+class Writer implements Runnable {
+    private CopyOnWriteArrayList<Integer> listOfNumbers;
+
+    public Writer(CopyOnWriteArrayList<Integer> listOfNumbers) {
+        this.listOfNumbers = listOfNumbers;
+    }
+
+    @Override
+    public void run() {
+        for (int i = 0; i < 10; i++) {
+            listOfNumbers.add(i);
+            System.out.println("Записано: " + i);
+            try {
+                Thread.sleep(100); // Задержка 100 мс
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        }
+    }
+}
+
+class Reader implements Runnable {
+    private CopyOnWriteArrayList<Integer> listOfNumbers;
+
+    public Reader(CopyOnWriteArrayList<Integer> listOfNumbers) {
+        this.listOfNumbers = listOfNumbers;
+    }
+
+    @Override
+    public void run() {
+        while (true) {
+            for (Integer number : listOfNumbers) {
+                System.out.println("Прочитано: " + number);
+            }
+            try {
+                Thread.sleep(100); // Задержка 100 мс
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        }
+    }
+}
