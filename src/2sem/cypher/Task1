@@ -1,0 +1,28 @@
+import javax.crypto.Cipher;
+import javax.crypto.spec.GCMParameterSpec;
+import javax.crypto.spec.SecretKeySpec;
+import java.nio.file.Files;
+import java.nio.file.Paths;
+
+public class AESDecryption {
+    public static void main(String[] args) throws Exception {
+        byte[] fileContent = Files.readAllBytes(Paths.get("path_to_encrypted_file"));
+
+        byte[] iv = new byte[16];
+        byte[] keyBytes = new byte[16];
+        System.arraycopy(fileContent, 0, iv, 0, 16);
+        System.arraycopy(fileContent, 16, keyBytes, 0, 16);
+
+        SecretKeySpec key = new SecretKeySpec(keyBytes, "AES");
+        GCMParameterSpec spec = new GCMParameterSpec(128, iv);
+
+        Cipher cipher = Cipher.getInstance("AES/GCM/NoPadding");
+        cipher.init(Cipher.DECRYPT_MODE, key, spec);
+
+        byte[] encryptedData = new byte[fileContent.length - 32];
+        System.arraycopy(fileContent, 32, encryptedData, 0, encryptedData.length);
+        byte[] decryptedData = cipher.doFinal(encryptedData);
+
+        System.out.println(new String(decryptedData));
+    }
+}
