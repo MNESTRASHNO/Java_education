@@ -3,7 +3,7 @@ import java.util.Arrays;
 
 public class PasswordCracker {
     public static void main(String[] args) throws Exception {
-        String targetHash = "your_target_hash_here"; // Замените на ваш хэш
+        String targetHash = "your_target_hash_here"; // Заменить на хэш
         char[] chars = {'a', 'b', 'c', 'd', 'e'};
         int length = 5;
 
